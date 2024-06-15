@@ -1,5 +1,5 @@
 import express from "express";
-import { notes, addNote, removeNote } from "../persistence.js";
+import { notes, addNote, removeNote, editNote } from "../persistence.js";
 
 const router = express.Router();
 

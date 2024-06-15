@@ -11,7 +11,16 @@ let addNote = (note) => {
 let removeNote = (id) => {
   _notes = _notes.filter((note) => note.id !== id);
 }
+
+let editNote = (id, newText) => {
+  _notes = _notes.map((note) => {
+    if (note.id === id) {
+      note.text = newText;
+    }
+    return note;
+  });
+}
 // For fun: why do we export a function instead of notes directly?
 const notes = () => _notes;
 
-export { notes, addNote, removeNote};
+export { notes, addNote, removeNote, editNote};

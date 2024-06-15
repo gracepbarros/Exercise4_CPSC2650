@@ -8,4 +8,6 @@ Steps of Node exercise:
 - ~~nodemon server.js~~
 - ~~go to http://localhost:3000~~
 
-1. Add some UI
+1. ~~Add some UI~~
+
+2. Implement the "data layer"
